@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Global change */
+* {
+    font-family: "Work Sans", sans-serif;
+}
+ul li {
+    display: inline-block;
+    list-style: none;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* Header css */
+.header {
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.headerLogo img {
+    width: 95px;
+}
+.headerMenu ul {
+    margin-bottom: 0;
+}
+.headerMenu ul li {
+    margin-left: -4px;
+}
+.headerMenu ul li a {
+    padding: 0 20px;
+    font-size: 23px;
+    color: black;
+    line-height: 61px;
+}
+.headerMenu ul li a:hover {
+}
+
+/* banner css */
+.banner {
+    background-image: url(./imag/kobu-agency-IWLR561-Yb-MY-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 300px 0;
+    margin-top: 83px;
+    position: relative;
+    z-index: 3;
+}
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+.bannerContent h6 {
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+    margin: 30px 0;
+}
+.bannerContent h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.bannerContent .btn {
+    color: #837d7d;
+    text-transform: capitalize;
+    background: white;
+    display: inline-block;
+    margin: 20px 15px;
+    font-size: 30px;
+    padding: 15px 20px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.bannerContent .btn:hover {
+    background: #e78f2b !important;
+    color: white !important;
+}
+
+/* praicing css */
+.pricing {
+    background: #f7f7f7;
+    padding: 100px 0;
+}
+.card {
+    box-shadow: 4px 4px 19px -10px black;
+    border: none;
+    margin: 0 5px;
+}
+.pricingText h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+.pricingText p {
+    margin: 30px;
+    font-size: 20px;
+    padding-bottom: 50px;
+    font-weight: 300;
+}
+.pricingTop {
+    border-bottom: 4px solid #ddd;
+    padding: 30px;
+    transition: 0.8s;
+}
+.pricingTop h5 {
+    font-size: 40px;
+    font-weight: 300;
+}
+.pricingTop h1 {
+    padding: 12px 9px;
+    font-size: 55px;
+    font-weight: 700;
+    background: #dddd;
+    border-radius: 5px;
+    margin: 45px 0;
+}
+.pricingTop h1 span {
+    font-size: 35px;
+}
+.pricingTop h6 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.pricingTop p {
+    font-size: 25px;
+    font-weight: 300;
+}
+.pricingBottom {
+    padding: 30px;
+}
+.pricingList:hover .pricingTop {
+    background: #e78f2b;
+    color: white;
+}
+.pricingList:hover .button .btn {
+    background: #e78f2b;
+    color: white;
+}
+.pricingList:hover h1 {
+    background: #e78f2b;
+}
+.pricingBottom ul li {
+    display: block;
+    font-size: 31px;
+    padding: 15px 0;
+}
+.pricingBottom ul li span {
+    color: #e79230;
+    font-size: 35px;
+    width: 53px;
+    display: inline-block;
+    margin-left: -29px;
+}
+.button {
+    text-align: center;
+    margin: 31px 0;
+}
+.button .btn {
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #918a91;
+    background: white;
+    border: none;
+    box-shadow: 4px 4px 30px -10px black;
+    transition: 0.8s;
+}
+/* team css */
+.teamSection {
+    background: #ffffff;
+    padding: 65px 0;
+}
+.teamHeader h1 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 500;
+    padding: 60px 0;
+}
+.team {
+    border: 9px solid #e78f2b;
+    margin: 0px 6px;
+    width: 318px;
+}
+.team img {
+    width: 100%;
+}
+.team h4 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.team h6 {
+    font-size: 25px;
+    font-weight: 300;
+}
+/* email css */
+.emailSection {
+    background: #f5f5f5;
+    padding: 100px 0;
+    text-align: center;
+}
+.email {
+}
+.email h5 {
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.email h1 {
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.form {
+    width: 700px;
+    margin: 0 auto;
+    font-size: 35px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: 300;
+    border: 2px solid #aa972c;
+    margin-bottom: 40px;
+}
+.email .btn {
+    background: #aa972c;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 10px 28px;
+    transition: 0.5s;
+}
+.email .btn:hover {
+    background: #f5f5f5;
+    color: #e78f2b !important;
+    border: 1px solid #aa972c;
+    box-shadow: 4px 4px 20px 0 rgba(170, 151, 44, 0.5);
+}
+/* choose section */
+.chooseSection {
+    background: #ffffff;
+    padding: 30px 0;
+}
+.chooseHeader h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.choose img {
+    width: 100%;
+}
+.choseText h1 {
+    margin-bottom: 12px;
+}
+.choseText p {
+    font-size: 20px;
+    line-height: 1.9em;
+}
+/* users css */
+.usarSection {
+    background: #f5f5f5;
+    padding: 80px 0;
+}
+.userHeader h6 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.userHeader h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+.user {
+    border: 3px solid #cccccc;
+    padding: 0;
+    margin: 0px 10px;
+    width: 420px;
+}
+.userContent {
+    background: white;
+    padding: 40px;
+}
+.userContent p {
+    font-size: 22px;
+    font-weight: 400;
+    position: relative;
+    line-height: 1.7em;
+}
+.userContent p::before {
+    content: "\f10d";
+    font: var(--fa-font-solid);
+    position: absolute;
+    top: -20%;
+    left: -5%;
+    font-size: 97px;
+    opacity: 0.2;
+}
+.userContent p::after {
+    content: "";
+    top: 129%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 32px 34px 0 34px;
+    border-color: #fff transparent transparent transparent;
+    transform: rotate(0deg);
+}
+.userBottom {
+    padding: 40px 0;
+    margin-top: 20px;
+}
+.userImg {
+    width: 87px;
+    margin: 0 auto;
+    border: 7px solid #e78f2b;
+    margin-right: 12px;
+}
+.userImg img {
+    width: 100%;
+}
+.userInfo h4 {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.userInfo p {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-top: -10px;
+}
+
+/* contact css */
+.contactSection {
+    background: #f5f5f5;
+    padding: 100px 0;
+}
+.contactForm h4 {
+    font-size: 35px;
+    font-weight: 600;
+}
+.contactForm p {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 35px 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+.formEmail {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: -10px;
+    font-size: 30px;
+    font-weight: 300;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 1px solid #aa972c;
+}
+.formName {
+    width: 340px;
+    margin: 0 auto;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 14px;
+    font-size: 30px;
+    font-weight: 300;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 1px solid #aa972c;
+}
+.formPhone {
+    width: 340px;
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 300;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 1px solid #aa972c;
+}
+.formMessage {
+    width: 700px;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 300;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 1px solid #aa972c;
+}
+.contactForm .btn {
+    background: #aa972c;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 10px 28px;
+    transition: 0.5s;
+    margin-top: 30px;
+}
+.contactForm .btn:hover {
+    background: #f5f5f5;
+    color: #e78f2b !important;
+    border: 1px solid #aa972c;
+    box-shadow: 4px 4px 20px 0 rgba(170, 151, 44, 0.5);
+}
+.footerTop h6 {
+    color: rgb(170, 151, 44);
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: -80px;
+    margin-top: 80px;
+}
